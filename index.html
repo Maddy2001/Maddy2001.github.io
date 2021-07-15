@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	 <style>
+	 	body{
+	 		background: #FAF4FE;
+	 		font-family: Arial;
+	 	}
+	 	.container{
+	 		margin-left: 350px;
+	 		border: none;
+	 		height: 730px;
+	 		width: 700px;
+	 		background-color: #F0DEFC;
+	 		border-radius: 20px;
+	 	}
+	 	
+	 	  
+	 	.a{
+	 		margin-left: 30px;
+	 	}
+	 	.input-left{
+	 		border: 1px solid #E1BEF9;
+	 		border-radius: 20px;
+	 		height: 25px;
+	 		width: 300px;
+	 	}
+	 	.input-right{
+	 		border: 1px solid #E1BEF9;
+	 		border-radius: 20px;
+	 		height: 25px;
+	 		width: 300px;
+	 		margin-left: 30px;
+	 	}
+	 	.email{
+	 		border: 1px solid #E1BEF9;
+	 		border-radius: 20px;
+	 		height: 25px;
+	 		width: 640px;
+	 	}
+	 	.time{
+	 		border: 1px solid #E1BEF9;
+	 		border-radius: 20px;
+	 		height: 25px;
+	 		width: 100px;
+	 		margin-left: 30px;
+	 	}
+	 	.label{
+	 		margin-left: 30px;
+	 	}
+	 	.label-radio{
+	 		margin-left: 285px;
+	 	}
+	 </style>
+</head>
+<body>
+	
+	<form>
+       <div class="container">
+        
+       
+          <div class="a">
+          	<p><label>Name</label></p>
+          	<input type="textarea" name="" placeholder="First Name" class="input-left">
+          	<input type="textarea" name="" placeholder="Last Name" class="input-right">
+        </div>
+      
+          <div class="a">
+          	<p><label>Email</label></p>
+          	<input type="textarea" name="" placeholder="@gmail.com" class="email">
+        </div> 
+        
+        <div class="a">
+          	<p><label>Name</label></p>
+          	<input type="textarea" name="" placeholder="Street Address" class="input-left">
+          	<input type="textarea" name="" placeholder="Address Line 2" class="input-right">
+          	<p><br>
+          	<input type="textarea" name="" placeholder="City" class="input-left">
+          	<input type="textarea" name="" placeholder="State/Province/Region" class="input-right">
+            </p>
+            <br>
+            <p>
+          	<input type="textarea" name="" placeholder="Zip/Postal Code" class="input-left">
+          	<select class="input-right">
+          		<option>Country</option>
+                <option>India</option>
+          	</select>
+            </p>
+            <br>
+            <p>
+          	<input type="textarea" name="" placeholder="Date" class="input-left">
+          	<label class="label">Time</label>
+          	<input type="time" min="10:00" max="20:00" required class="time">
+            </p>
+        </div>
+        
+       <p>
+          	 <p>
+          	 <label class="label">Checkboxes</label><label class="label-radio">Radios</label>
+          	 <br>
+          	 <br>
+          	      <input type="checkbox" class="label">First Choice <input type="radio" class="label-radio">First Choice<br><br>
+          	      <input type="checkbox" class="label">First Choice <input type="radio" class="label-radio">First Choice<br><br>
+          	      <input type="checkbox" class="label">First Choice <input type="radio" class="label-radio">First Choice 
+             </p>
+       </p>
+    </form>
+</body>
+</html>
