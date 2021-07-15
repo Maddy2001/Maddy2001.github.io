@@ -6,110 +6,134 @@
   <meta name="keywords" content="Forms">
   <meta name="author" content="Yash Gaigole">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Form</title>
-	 <style>
-	 	body{
-	 		background: #FAF4FE;
-	 		font-family: Arial;
-	 	}
-	 	.container{
-	 		margin-left: 350px;
+	<title>billing form</title>
+	<style>
+body{
+		background: #FAF4FE;
+		font-family: Arial;
+	}
+	.jj{
+		margin-left: 350px;
 	 		border: none;
-	 		height: 730px;
+	 		height: 750px;
 	 		width: 700px;
-	 		background-color: #F0DEFC;
+	 		background-color: #EDD5FE;
 	 		border-radius: 20px;
-	 	}
-	 	
-	 	  
-	 	.a{
-	 		margin-left: 30px;
-	 	}
-	 	.input-left{
-	 		border: 1px solid #E1BEF9;
-	 		border-radius: 20px;
+	 		margin: auto;
+	 		padding: 30px;
+	}
+	.left{
+		border: none #F6EBFF;
+	 		border-radius: 15px;
 	 		height: 25px;
 	 		width: 300px;
-	 	}
-	 	.input-right{
-	 		border: 1px solid #E1BEF9;
-	 		border-radius: 20px;
+
+	}
+	.right{
+		border: none #F6EBFF;
+	 		border-radius: 15px;
 	 		height: 25px;
 	 		width: 300px;
 	 		margin-left: 30px;
-	 	}
-	 	.email{
-	 		border: 1px solid #E1BEF9;
-	 		border-radius: 20px;
+	}
+	.time{
+		border: none #F6EBFF;
+	 		border-radius: 15px;
+	 		height: 25px;
+	 		width: 260px;
+	 		margin-left: 30px;
+	}
+	.email{
+	 		border: none #F6EBFF;
+	 		border-radius: 15px;
 	 		height: 25px;
 	 		width: 640px;
+	 }
+
+	 .sm{
+	 		margin-left: 5px;
+	 
 	 	}
-	 	.time{
-	 		border: 1px solid #E1BEF9;
-	 		border-radius: 20px;
-	 		height: 25px;
-	 		width: 100px;
+	 	.m{
+	 		display: inline-block;
+	 	
 	 		margin-left: 30px;
 	 	}
-	 	.label{
-	 		margin-left: 30px;
-	 	}
-	 	.label-radio{
+	 	.sd{
 	 		margin-left: 285px;
+	 		display: inline-block;
+	 		
 	 	}
-	 </style>
+
+	 	
+
+
+
+
+
+		
+	</style>
 </head>
 <body>
 	
-	<form>
-       <div class="container">
-        
-       
-          <div class="a">
-          	<p><label>Name</label></p>
-          	<input type="textarea" name="" placeholder="First Name" class="input-left">
-          	<input type="textarea" name="" placeholder="Last Name" class="input-right">
-        </div>
-      
-          <div class="a">
-          	<p><label>Email</label></p>
-          	<input type="textarea" name="" placeholder="@gmail.com" class="email">
-        </div> 
-        
-        <div class="a">
-          	<p><label>Name</label></p>
-          	<input type="textarea" name="" placeholder="Street Address" class="input-left">
-          	<input type="textarea" name="" placeholder="Address Line 2" class="input-right">
-          	<p><br>
-          	<input type="textarea" name="" placeholder="City" class="input-left">
-          	<input type="textarea" name="" placeholder="State/Province/Region" class="input-right">
-            </p>
-            <br>
-            <p>
-          	<input type="textarea" name="" placeholder="Zip/Postal Code" class="input-left">
-          	<select class="input-right">
-          		<option>Country</option>
-                <option>India</option>
-          	</select>
-            </p>
-            <br>
-            <p>
-          	<input type="textarea" name="" placeholder="Date" class="input-left">
-          	<label class="label">Time</label>
-          	<input type="time" min="10:00" max="20:00" required class="time">
-            </p>
-        </div>
-        
-       <p>
-          	 <p>
-          	 <label class="label">Checkboxes</label><label class="label-radio">Radios</label>
+<form>
+	<div class="jj">
+
+	
+
+		
+		<h3 class="sm">Name</h3>
+		<br>
+		<input type="text" placeholder="first name" class="left">
+		<input type="text" placeholder="Last name" class="right">
+		<br>
+		<br>
+		<br>
+		<input type="email" placeholder=" Enter the E-mail" class="email">
+		<br>
+		<br>
+		<h3 class="sm">Address</h3><br>
+		<input type="text" placeholder="Street Address"  class="left">
+		<input type="text" placeholder="Address line 2" class="right">
+		<br>
+		<br>
+		<br>
+		<input type="text" placeholder="city" class="left">
+		<input type="text" placeholder="state/province/region" class="right">
+		<br>
+		<br>
+		<br>
+		<input type="text" placeholder="Zip code" class="left">
+		<select name="country" class="right">
+			<option value="India">India</option>
+			<option value="USA">Europe</option>
+			<option value="England">England</option>
+			<option value="Italy">USA</option>
+		</select>
+		<br>
+		<br>
+		<br>
+		<input type="date" placeholder="Date" class="left">
+		
+		<input type="time" placeholder="hour" class="right">
+		
+		<select><option value="AM">AM</option>
+		<option value="PM">PM</option></select>
+		<br>
+		<br>
+		<br>
+
+	<p>
+          	 <h3 class="m">Checkboxes</h3><h3 class="sd">Radios</h3>
           	 <br>
           	 <br>
-          	      <input type="checkbox" class="label">First Choice <input type="radio" class="label-radio">First Choice<br><br>
-          	      <input type="checkbox" class="label">First Choice <input type="radio" class="label-radio">First Choice<br><br>
-          	      <input type="checkbox" class="label">First Choice <input type="radio" class="label-radio">First Choice 
+          	      <input type="checkbox" class="m">First Choice <input type="radio" class="sd">First Choice<br><br>
+          	      <input type="checkbox" class="m">First Choice <input type="radio" class="sd">First Choice<br><br>
+          	      <input type="checkbox" class="m">First Choice <input type="radio" class="sd">First Choice 
              </p>
-       </p>
-    </form>
+
+		</div>
+
+	</form>
 </body>
 </html>
